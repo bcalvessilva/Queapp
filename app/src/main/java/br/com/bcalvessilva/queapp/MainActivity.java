@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import br.com.bcalvessilva.queapp.listener.PlayButtonOnClickListener;
+import br.com.bcalvessilva.queapp.listener.PlayImageOnClickListener;
+
 /**
  * Created by bcalvessilva on 10/06/17.
  */
@@ -32,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         int idQueBackground = R.id.queBackground;
         ImageView queBackground = (ImageView) findViewById(idQueBackground);
-        queBackground.setOnClickListener(new PlayButtonOnClickListener(idQueBackground,this,R.raw.comando){
+        queBackground.setOnClickListener(new PlayImageOnClickListener(idQueBackground,this,R.raw.comando){
             int counter = 0;
             public void onClick(View view){
                 counter++;
